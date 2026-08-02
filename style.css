@@ -1,6 +1,3 @@
-/* =========================================
-   GLOBAL STYLES & VARIABLES
-   ========================================= */
 :root {
   --bg-color: #080c14;
   --card-bg: rgba(18, 24, 38, 0.85);
@@ -33,7 +30,6 @@ body {
   line-height: 1.6;
 }
 
-/* Ambient Background Glow Effects */
 .bg-glow {
   position: absolute;
   border-radius: 50%;
@@ -58,9 +54,6 @@ body {
   background: rgba(6, 182, 212, 0.15);
 }
 
-/* =========================================
-   NAVIGATION BAR
-   ========================================= */
 .navbar {
   max-width: 1280px;
   width: 100%;
@@ -151,7 +144,6 @@ body {
   color: #fff;
 }
 
-/* BUTTONS */
 .btn {
   padding: 0.75rem 1.5rem;
   border-radius: 12px;
@@ -190,9 +182,6 @@ body {
   background: rgba(30, 41, 59, 0.8);
 }
 
-/* =========================================
-   HERO SECTION
-   ========================================= */
 .hero {
   min-height: 100vh;
   padding-top: 100px;
@@ -279,7 +268,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* Skill Pills in Hero */
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
@@ -308,7 +296,6 @@ body {
   gap: 1rem;
 }
 
-/* HERO RIGHT VISUAL */
 .hero-right {
   position: relative;
   display: flex;
@@ -382,7 +369,6 @@ body {
   border-radius: 50%;
 }
 
-/* Floating Icon Badges */
 .floating-badge {
   position: absolute;
   width: 38px;
@@ -401,7 +387,7 @@ body {
 .badge-star { top: 30%; right: -10px; background: #06b6d4; }
 .badge-check { bottom: -10px; left: 45%; background: #10b981; width: 42px; height: 42px; }
 
-/* Stat Floating Boxes */
+
 .stat-card {
   position: absolute;
   background: var(--card-bg);
@@ -422,9 +408,6 @@ body {
 .stat-years { bottom: 0px; right: -20px; }
 .stat-years h3 { color: #ec4899; }
 
-/* =========================================
-   REST OF SECTIONS (About, Skills, Projects, Contact)
-   ========================================= */
 section {
   padding: 5rem 2rem;
   max-width: 1280px;
