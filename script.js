@@ -1,11 +1,7 @@
-// =========================
-// Typing Animation
-// =========================
 const words = [
   "IT Engineering Student",
   "Cyber Security Enthusiast",
-  "Web Developer",
-  "Python Programmer",
+  "Ethical Hacker",
   "AI Enthusiast",
   "Networking Learner"
 ];
@@ -44,9 +40,6 @@ function typeEffect() {
 
 typeEffect();
 
-// =========================
-// Smooth Scrolling
-// =========================
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", function(e) {
         e.preventDefault();
@@ -59,9 +52,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
 });
 
-// =========================
-// Active Navigation Highlight
-// =========================
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -82,9 +72,6 @@ window.addEventListener("scroll", () => {
     });
 });
 
-// =========================
-// Hero Parallax Effect
-// =========================
 const profile = document.querySelector(".profile-ring");
 
 window.addEventListener("mousemove", e => {
