@@ -1,129 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sandesh Pangeni | Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandesh Pangeni | Portfolio</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="logo">Sandy</div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Ambient Light Glows -->
+  <div class="bg-glow glow-purple"></div>
+  <div class="bg-glow glow-blue"></div>
 
-<section id="home" class="hero">
-  <div class="hero-bg">
-    <span class="circle c1"></span>
-    <span class="circle c2"></span>
-    <span class="circle c3"></span>
-  </div>
-
-  <div class="hero-container">
-    <div class="hero-left">
-      <p class="welcome">👋 Hello, I'm</p>
-      <h1>Sandesh <span>Pangeni</span></h1>
-      <h3><span id="typing"></span></h3>
-
-      <p class="hero-description">
-        Bachelor of Engineering in Information Technology student passionate
-        about Cyber Security, AI, Networking and Web Development.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#contact" class="btn">Contact Me</a>
-        <a href="assets/Sandesh_Pangeni_CV.pdf" class="btn btn-outline" download>Download CV</a>
-      </div>
-
-      <div class="tech-stack">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Python</span>
-        <span>C++</span>
-        <span>Git</span>
-        <span>Linux</span>
-        <span>Cyber Security</span>
+  <!-- HEADER / NAVIGATION -->
+  <header class="navbar">
+    <div class="logo-container">
+      <div class="logo-box">S</div>
+      <div class="logo-text">
+        <span class="logo-title">Sandy</span>
+        <span class="logo-subtitle">IT Engineer & Dev</span>
       </div>
     </div>
 
-    <div class="hero-right">
-      <div class="profile-box">
-        <div class="profile-ring">
-          <img src="images/webpp.jpeg" alt="Sandesh Pangeni">
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+        <i class="fa-regular fa-sun"></i>
+      </button>
+      <a href="#contact" class="btn btn-primary btn-pill">
+        Hire Me <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      
+      <!-- Left Hero Column -->
+      <div class="hero-left">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          Available for freelance work
+        </div>
+
+        <div class="hero-titles">
+          <p class="greeting">👋 Hello, I'm</p>
+          <h1 class="main-name">Sandesh <span>Pangeni</span></h1>
+          <h2 class="role-title">
+            I'm a <span class="gradient-text"><span id="typing"></span></span><span class="cursor">|</span>
+          </h2>
+        </div>
+
+        <p class="hero-description">
+          Bachelor of Engineering in Information Technology student passionate
+          about Cyber Security, AI, Networking and Web Development.
+        </p>
+
+        <!-- Tech Stack Pills -->
+        <div class="tech-stack">
+          <span class="tag-pill tag-blue">HTML</span>
+          <span class="tag-pill tag-pink">CSS</span>
+          <span class="tag-pill tag-amber">JavaScript</span>
+          <span class="tag-pill tag-teal">Python</span>
+          <span class="tag-pill tag-emerald">C++</span>
+          <span class="tag-pill tag-purple">Git</span>
+          <span class="tag-pill tag-sky">Linux</span>
+          <span class="tag-pill tag-indigo">Cyber Security</span>
+        </div>
+
+        <!-- Hero Buttons -->
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            View My Work <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="assets/Sandesh_Pangeni_CV.pdf" class="btn btn-secondary" download>
+            Download CV <i class="fa-solid fa-download"></i>
+          </a>
         </div>
       </div>
+
+      <!-- Right Hero Visual Column -->
+      <div class="hero-right">
+        
+        <!-- Code Card Box -->
+        <div class="code-card">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  name: <span class="string">"Sandesh"</span>,
+  skills: [<span class="string">"Python"</span>, <span class="string">"CyberSec"</span>],
+  passion: <span class="boolean">true</span>
+}</code></pre>
+        </div>
+
+        <!-- Profile Picture Ring Container -->
+        <div class="profile-box">
+          <div class="profile-ring">
+            <div class="profile-inner">
+              <img src="images/webpp.jpeg" alt="Sandesh Pangeni">
+            </div>
+          </div>
+
+          <!-- Floating Icon Badges -->
+          <div class="floating-badge badge-zap">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="floating-badge badge-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="floating-badge badge-star">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="floating-badge badge-check">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+
+        <!-- Stat Cards -->
+        <div class="stat-card stat-projects">
+          <h3>10+</h3>
+          <p>Projects</p>
+        </div>
+
+        <div class="stat-card stat-years">
+          <h3>IT</h3>
+          <p>Engineer</p>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="about">
-  <h2 class="section-title">About <span>Me</span></h2>
-  <div class="about-container">
-    <div class="about-image">
-      <img src="images/webpp.jpeg" alt="Profile">
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/webpp.jpeg" alt="Profile">
+      </div>
+      <div class="about-content">
+        <h3>Sandesh Pangeni</h3>
+        <p>I am pursuing BE in Information Technology under Pokhara University. I enjoy building web applications and learning Cyber Security, Networking and AI.</p>
+      </div>
     </div>
-    <div class="about-content">
-      <h3>Sandesh Pangeni</h3>
-      <p>I am pursuing BE in Information Technology under Pokhara University. I enjoy building web applications and learning Cyber Security, Networking and AI.</p>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+    <div class="skills-container">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">C / C++</div>
+      <div class="skill-card">Networking</div>
+      <div class="skill-card">Cyber Security</div>
+      <div class="skill-card">Linux</div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="skills">
-  <h2 class="section-title">Technical Skills</h2>
-  <div class="skills-container">
-    <div class="skill-card">HTML</div>
-    <div class="skill-card">CSS</div>
-    <div class="skill-card">JavaScript</div>
-    <div class="skill-card">Python</div>
-    <div class="skill-card">C / C++</div>
-    <div class="skill-card">Networking</div>
-    <div class="skill-card">Cyber Security</div>
-    <div class="skill-card">Linux</div>
-  </div>
-</section>
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Responsive portfolio using HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>Network Design</h3>
+        <p>LAN design, subnetting and routing.</p>
+      </div>
+      <div class="project">
+        <h3>Cyber Security Lab</h3>
+        <p>Vulnerability scanning and analysis.</p>
+      </div>
+    </div>
+  </section>
 
-<section id="projects">
-  <h2 class="section-title">Projects</h2>
-  <div class="projects">
-    <div class="project"><h3>Portfolio Website</h3><p>Responsive portfolio using HTML, CSS and JavaScript.</p></div>
-    <div class="project"><h3>Network Design</h3><p>LAN design, subnetting and routing.</p></div>
-    <div class="project"><h3>Cyber Security Lab</h3><p>Vulnerability scanning and analysis.</p></div>
-  </div>
-</section>
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <h2 class="section-title">My <span>Education</span></h2>
+    <div class="education-card">
+      <h3>BE in Information Technology</h3>
+      <p>Pokhara University</p>
+    </div>
+  </section>
 
-<section id="education">
-<h2 class="section-title">Education</h2>
-<p>BE in Information Technology - Pokhara University</p>
-</section>
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+    <div class="contact-info">
+      <p><i class="fa-solid fa-phone"></i> +977 976565151</p>
+      <p><i class="fa-solid fa-envelope"></i> pangenisandesh001@gmail.com</p>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/sandesh-pangeni-a30594372/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/sandeshpangeni001" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/sandeshpageni__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </section>
 
-<section id="contact">
-<h2 class="section-title">Contact</h2>
-<p>📞 Phone : <a href="callto:9700000000">+977 9700000000</a></p>
- <p>📧 Email:
-        <a href="mailto:pangenisandesh001@gmail.com">
-            pangenisandesh001@gmail.com
-        </a>
-    </p>
-<div class="social-icons">
-<a href="https://www.linkedin.com/in/sandesh-pangeni-a30594372/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-<a href="https://www.facebook.com/sandeshpangeni001" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-<a href="https://www.instagram.com/sandeshpageni__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-</div>
-</section>
+  <footer>
+    <p>© 2026 Sandesh Pangeni. All rights reserved.</p>
+  </footer>
 
-<footer>© 2026 Sandesh Pangeni</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
